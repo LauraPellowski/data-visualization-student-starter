@@ -15,3 +15,13 @@ How to use, for subsequent assignments:
 - Update the index at `src/assignments/index.ts` to add the new listing
 - Redeploy to GitHub pages
 - Submit the link to your hosted assignment in GitHub pages
+
+# Week 1
+Summary: altered starter code in the following ways:
+- Changed shape from circle to square
+- Added blue/purple/pink color gradient
+- Made data points bigger
+- Added transition to make data points appear one at a time
+- Ran `npm audit fix` as there were some vulnerabilities
+- Added `.npmrc` file and min-release-age
+- Ran `npm run prettier` 

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { select } from 'd3-selection';
 import { scaleLinear } from 'd3-scale';
+import { transition } from 'd3-transition';
 import { useDimensions } from './useDimensions';
 
 interface DataPoint {
@@ -19,7 +20,7 @@ const data: DataPoint[] = [
 
 const ORIGINAL_WIDTH = 960;
 const ORIGINAL_HEIGHT = 500;
-const RADIUS = 34;
+const SIDE_LENGTH = 75;
 
 export function ResponsivePseudoScatterPlot() {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -33,13 +34,37 @@ export function ResponsivePseudoScatterPlot() {
 
     const yScale = scaleLinear().domain([0, ORIGINAL_HEIGHT]).range([0, dimensions.height]);
 
+    const gradient = select(svg)
+      .append('defs')
+      .append('linearGradient')
+      .attr('id', 'myGradient')
+      .attr('x1', '0%')
+      .attr('x2', '100%')
+      .attr('y1', '0%')
+      .attr('y2', '100%');
+
+    gradient.append('stop').attr('offset', '0%').attr('stop-color', '#37c3de');
+
+    gradient.append('stop').attr('offset', '100%').attr('stop-color', '#ec30f2');
+
     select(svg)
-      .selectAll('circle')
+      .selectAll('rect')
       .data(data)
-      .join('circle')
-      .attr('cx', (d: DataPoint) => xScale(d.x))
-      .attr('cy', (d: DataPoint) => yScale(d.y))
-      .attr('r', RADIUS);
+      .join('rect')
+      .attr('x', (d: DataPoint) => xScale(d.x))
+      .attr('y', (d: DataPoint) => yScale(d.y))
+      .attr('width', 0)
+      .attr('height', 0)
+      .attr('opacity', 0)
+      .attr('fill', 'url(#myGradient)')
+      .attr('rx', '3')
+      .attr('ry', '3')
+      .transition()
+      .duration(500)
+      .delay((d, i) => i * 200)
+      .attr('width', SIDE_LENGTH)
+      .attr('height', SIDE_LENGTH)
+      .attr('opacity', 1);
   }, [dimensions]);
 
   return (

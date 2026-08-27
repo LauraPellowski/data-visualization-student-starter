@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { select } from 'd3-selection';
 import { scaleLinear } from 'd3-scale';
-import { transition } from 'd3-transition';
+import "d3-transition";
 import { useDimensions } from './useDimensions';
 
 interface DataPoint {
@@ -61,7 +61,7 @@ export function ResponsivePseudoScatterPlot() {
       .attr('ry', '3')
       .transition()
       .duration(500)
-      .delay((d, i) => i * 200)
+      .delay((_, i) => i * 200)
       .attr('width', SIDE_LENGTH)
       .attr('height', SIDE_LENGTH)
       .attr('opacity', 1);

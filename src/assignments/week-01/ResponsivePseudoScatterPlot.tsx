@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { select } from 'd3-selection';
 import { scaleLinear } from 'd3-scale';
-import "d3-transition";
+import 'd3-transition';
 import { useDimensions } from './useDimensions';
 
 interface DataPoint {

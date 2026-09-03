@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { select } from 'd3-selection';
 import { csv } from 'd3-fetch';
 
-const DATA_URL = `${import.meta.env.BASE_URL}public/data/MBTA_Monthly_Ridership_By_Mode_and_Line.csv`;
+const DATA_URL = `${import.meta.env.BASE_URL}data/MBTA_Monthly_Ridership_By_Mode_and_Line.csv`;
 
 export function LoadAndSummarizeDataset() {
   const svgRef = useRef<SVGSVGElement>(null);

@@ -47,3 +47,12 @@ Some websites with visualizations of MBTA data to serve as inspiration:
 
 5. Another map, where you can hover over the line and it will highlight it. Possibly can include other information about the line as well.
    ![Sketch 5](<Screenshot 2026-09-02 203307.png>)
+
+## Task Analysis
+
+1. I want to **compare characteristics** such as ridership and timeliness across different MBTA lines.
+2. I want to **identify trends** related to these characteristics throughout the week and over longer time periods.
+3. I want to **determine how late** each MBTA line has been historically and on average.
+4. I want to **investigate the time overlap** between my commute and when the commuter rail passes over my commute to increase the likelyhood of seeing more trains.
+5. I want to **investigate if there is an ideal time** to catch a bus or train into the city on a weekend.
+6. I want to **search for any interesting outliers** in the data

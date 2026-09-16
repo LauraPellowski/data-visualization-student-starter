@@ -2,6 +2,7 @@ import type { ComponentType } from 'react';
 import { ResponsivePseudoScatterPlot } from './week-01/ResponsivePseudoScatterPlot';
 import { LoadAndSummarizeDataset } from './week-02/LoadAndSummarizeDataset';
 import { ScatterplotBasic } from './week-03/ScatterplotBasic';
+import { ScatterplotBasic2 } from './week-04/ScatterplotBasic2';
 
 export interface Assignment {
   id: string;
@@ -24,6 +25,11 @@ export const assignments: Assignment[] = [
     id: '3',
     name: 'Week 3',
     component: ScatterplotBasic,
+  },
+  {
+    id: '4',
+    name: 'Week 4',
+    component: ScatterplotBasic2,
   },
 ];
 

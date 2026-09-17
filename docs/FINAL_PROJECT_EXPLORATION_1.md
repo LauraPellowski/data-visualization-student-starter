@@ -56,3 +56,65 @@ Some websites with visualizations of MBTA data to serve as inspiration:
 4. I want to **investigate the time overlap** between my commute and when the commuter rail passes over my commute to increase the likelyhood of seeing more trains.
 5. I want to **investigate if there is an ideal time** to catch a bus or train into the city on a weekend.
 6. I want to **search for any interesting outliers** in the data
+
+## Validation
+
+### Domain situation
+
+**Validate**: Observe and interview target users
+
+Who are my target users? Well, I think my target audience would be people who have a particular interest in transportation data. These could include people who just have an interest in all things public transportation, but this could also be people who actually use specifically the MBTA, and might want to learn things that could improve or alter their daily commute. This could even include people who make decisions regarding the MBTA, such as funding/budgeting (where to allocate money), making schedules, hiring employees, proposing expansions, etc.
+
+If I were to actually have end users such as the ones described above, I would want to interview them and observe them to see what problems they have and what information would be useful to them to solve these problems. Do they also want to know the answers to the questions I asked earlier in this document?
+
+[_downstream_]
+
+**Validate**: Observe adoption rates
+
+I could see who is actually using my visualization, and how popular it is among different groups. Possibly, it may be more popular with casual public transportation enjoyers, rather than officials doing budgeting for the MBTA.
+
+---
+
+### Data/task abstraction
+
+[_downstream_]
+
+**Validate**: Test on target users, collect anecdotal evidence of utility
+
+I would intentify some members of my target audience(s), and have them try out the visualization tool, and let them explore and make their own discoveries about it. I would love to see if they genuinly do find utility in the tool, or if it doesn't actually solve the identified problems that they have. Possibly my target audience has background knowledge that can lend insights into the data visualization, for instance, like suspensions in a particular line which may have caused a downturn in ridership for that period of time. I think it would be really cool to see what connections they can make.
+
+**Validate**: Field study, document human usage of deployed system
+
+This would be intervening with the visualization tool and studying how the target users' behavior changes. I would be interested to see if the users think positively or negatively towards the new tool.
+
+---
+
+### Visual encoding/interaction idiom
+
+**Validate**: Justify encoding/interaction design
+
+I know that whatever visual encoding I choose should have proper justification for why it effectively communicates the information.
+
+[_downstream_]
+
+**Validate**: Qualitative/quantitative result image analysis. Test on any users, informal usability study.
+
+I would possibly choose someone like my roommate to analyze these result images. They may or may not be part of the target audience, but they can give good feedback if something is not readable or doesn't make any sense, regardless of their background experience with the MBTA.
+
+**Validate**: Lab study, measure human time/errors for task
+
+I would love to see how fast users can understand the data they are looking at, and how fast they can learn how to interact with the visualization. It would also be interesting to see if there are any patterns in features that may be more difficult to understand or are easily misinterpreted.
+
+---
+
+### Algorithm
+
+**Validate**: Analyze computational complexity
+
+I think it is important to put some thought into the design of the algorithm to make sure that it is fast and cheap. Analyzing an algorithm can include using Big O notation. If an algorithm is too slow, there are most likely many well-documented tricks to speed up some of these processes.
+
+[_downstream_]
+
+**Validate**: Measure system time/memory
+
+In my mind, this doesn't have to be super formal. For my purposes, I would just like to know if it feels like it loads instantly, or if it feel "laggy", to the user.

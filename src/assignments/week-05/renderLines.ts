@@ -2,7 +2,6 @@ import type { Selection } from 'd3-selection';
 import type { ScaleLinear, ScaleOrdinal, ScaleTime } from 'd3-scale';
 import type { TrainRow } from './useTrainDataset';
 import type { Margins } from './useScales';
-
 import { ascending, group } from 'd3-array';
 import { line } from 'd3-shape';
 
@@ -30,8 +29,8 @@ export function renderLines(
   chart.selectAll('.ridership-line').remove();
 
   const lineGenerator = line<TrainRow>()
-    .x((d) => xScale(xValue(d)))
-    .y((d) => yScale(yValue(d)));
+    .x((d: TrainRow) => xScale(xValue(d)))
+    .y((d: TrainRow) => yScale(yValue(d)));
 
   grouped.forEach((lineData, lineName) => {
     lineData.sort((a, b) =>

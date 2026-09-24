@@ -118,3 +118,19 @@ I think it is important to put some thought into the design of the algorithm to 
 **Validate**: Measure system time/memory
 
 In my mind, this doesn't have to be super formal. For my purposes, I would just like to know if it feels like it loads instantly, or if it feel "laggy", to the user.
+
+## Updated Sketches
+
+I would like to incorporate my current work into my final project, as its own "section" in a larger interactive map. Below is my "north star" for what I want the final product to look like. There are still some aspects to be smoothed out/better defined, but I feel like this is a good goal, where I can add technical detail and more features as I implement it.
+
+![Project Idea showing live MBTA map](IMG_7619.jpg)
+
+I want the main "home" screen to be a live map of the MBTA, showing where all of the train cars currently are. There are multiple opportunities for interactivity here:
+
+1.  If the user hovers over a train car, noted by the rectangles in the sketch, it will show a tooltip containing information like its ID number, destination, next stop, and status (on time, early, late, delayed).
+2.  If the user hovers over a stop, noted by the circles in the sketch, it will show a tooltip showing what the name of the stop is with a button to show a detailed view. If the user clicks the button, they will either be brought to a new page, or maybe the detailed view will appear somewhere on the current page (I'm not sure yet). Regardless, it will show info like the name of the stop, the number of trains that pass through each day, and a chart representing data of the time each train passes through the stop. Right now, I'm thinking of a bar chart showing the time of day (5am-2am, when the trains run) on the x-axis, with bars showing the trains that arrive in each "bin" of time. I also want the user to be able to select what they want to see, like only for a specific day, or agreggate the last week/month/year.
+3.  If the user hovers over the line itself, it will show a tooltip showing what that line is, and a button to see the detailed view. Like point #2, I am not sure where this detailed view will show up. But, this is where I want to incorporate my existing work. This detailed view will show more general data, like total ridership for that specific line. I also want the option for the user to be able to select multiple lines to compare, or show all the lines (showing all the lines is what my implementation currently does). In addition to ridership, I also want to add other features, such as frequency (how many trains run per line per day).
+
+Current progress that will incorporate with point #3:
+
+![MBTA Total Ridership Implementation](<Screenshot 2026-09-16 204036.png>)

@@ -4,6 +4,7 @@ import { LoadAndSummarizeDataset } from './week-02/LoadAndSummarizeDataset';
 import { ScatterplotBasic } from './week-03/ScatterplotBasic';
 import { ScatterplotBasic2 } from './week-04/ScatterplotBasic2';
 import { ScatterplotBasic3 } from './week-05/ScatterplotBasic3';
+import { MapView } from './week-06/MapView';
 
 export interface Assignment {
   id: string;
@@ -36,6 +37,11 @@ export const assignments: Assignment[] = [
     id: '5',
     name: 'Week 5',
     component: ScatterplotBasic3,
+  },
+  {
+    id: '6',
+    name: 'Week 6',
+    component: MapView,
   },
 ];
 

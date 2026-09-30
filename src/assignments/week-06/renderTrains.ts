@@ -121,6 +121,8 @@ export function renderTrains(
     .on('mouseout', function () {
       tooltip.attr('visibility', 'hidden');
     });
+
+    tooltip.raise();
 }
 
 function getRouteColor(routeId: string): string {

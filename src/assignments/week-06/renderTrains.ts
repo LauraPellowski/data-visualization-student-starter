@@ -122,7 +122,7 @@ export function renderTrains(
       tooltip.attr('visibility', 'hidden');
     });
 
-    tooltip.raise();
+  tooltip.raise();
 }
 
 function getRouteColor(routeId: string): string {

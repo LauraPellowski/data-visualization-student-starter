@@ -8,6 +8,7 @@ import { MapView } from './week-06/MapView';
 import { LloydRelaxation } from './week-07/LloydRelaxation';
 import { MapView2 } from './week-08/MapView';
 import { ScatterplotBasic4 } from './week-10/ScatterplotBasic4';
+import { MapView3 } from './week-11/MapView';
 
 export interface Assignment {
   id: string;
@@ -60,6 +61,11 @@ export const assignments: Assignment[] = [
     id: '10',
     name: 'Week 10',
     component: ScatterplotBasic4,
+  },
+  {
+    id: '11',
+    name: 'Week 11',
+    component: MapView3,
   },
 ];
 

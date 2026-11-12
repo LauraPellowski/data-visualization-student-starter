@@ -1,0 +1,52 @@
+.week12-root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: Sans-Serif;
+}
+
+.week12-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.week12-controls {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.week12-controls button {
+  padding: 6px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #2c5f8a;
+  background: #eaf3fa;
+  border-radius: 4px;
+}
+
+.week12-controls button:hover {
+  background: #d3e6f5;
+}
+
+.week12-controls input[type='range'] {
+  width: 260px;
+}
+
+.week12-month-label {
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 110px;
+}
